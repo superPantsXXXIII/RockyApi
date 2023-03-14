@@ -25,52 +25,60 @@
           <th>info</th>
         </tr>
         <tr>
-          <td>get</td>
+          <td class="get">get</td>
           <td>thisUrl/rocks?page=1</td>
           <td>get the entire collection divided into pages of 10 </td>
         </tr>
         <tr>
-          <td>get</td>
+          <td class="get">get</td>
           <td>thisUrl/rocks/single/:id</td>
           <td>get a single item by item id </td>
         </tr>
         <tr>
-          <td>get</td>
+          <td class="get">get</td>
           <td>thisUrl/rocks/search?s=SEARCHTERM</td>
           <td>get the items that includes in their name or info the SEARCHTERM that was inputed </td>
         </tr>
         <tr>
-          <td>get</td>
+          <td class="get">get</td>
           <td>thisUrl/rocks/category/:catName</td>
           <td>get all items in a specified category</td>
         </tr>
         <tr>
-          <td>get</td>
+          <td class="get">get</td>
           <td>thisUrl/rocks/priceRange?min=NUM&max=NUM</td>
           <td>get all items where their price lay bettwen the minimum and maximum inputed</td>
         </tr>
         <tr>
-          <td>post</td>
+          <td class="post">post</td>
           <td>thisUrl/rocks</td>
           <td>post an item as a registered user(send auth token through header as x-api-key).<br/> the following fields are Required(name,info,category,price) and its optional to add an image with the field img_url</td>
         </tr>
         <tr>
-          <td>put</td>
+          <td class="put">put</td>
           <td>thisUrl/rocks/:itemId</td>
           <td>put(update) any item you posted as a registered user(send auth token through header as x-api-key, same fields applay as the in the post method)</td>
         </tr>
         <tr>
-          <td>delete</td>
+          <td class="delete">delete</td>
           <td>thisUrl/rocks/:itemId</td>
           <td>delete any item you posted as a registered user</td>
         </tr>
         <tr>
-          <td>post</td>
+          <th colspan="3">register and support the site</th>
+        </tr>
+        <tr>
+          <td class="get">get</td>
+          <td>thisUrl/users/userInfo</td>
+          <td>see your information as it was registered in the site</td>
+        </tr>
+        <tr>
+          <td class="post">post</td>
           <td>thisUrl/users</td>
           <td>register to our site by sending through the request's body a Json that includes your name, email and password </td>
         </tr>
         <tr>
-          <td>post</td>
+          <td class="post">post</td>
           <td>thisUrl/users/login</td>
           <td>login to get your auth token that is required for executing some of the methods in the site by sending through the request's body a Json that includes your email and password </td>
         </tr>
