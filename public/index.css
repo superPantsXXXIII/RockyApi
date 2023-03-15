@@ -64,6 +64,10 @@ main .container h1 {
     color: white;
 }
 
+.customers td a{
+    color:green;
+}
+
 .get{
     background: green;
 }
@@ -79,4 +83,5 @@ main .container h1 {
 
 .delete{
     background: red;
+    
 }
